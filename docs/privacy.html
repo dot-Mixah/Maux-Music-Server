@@ -198,7 +198,11 @@
       </ul>
 
       <h2>4. Third-Party Integrations (Optional)</h2>
-      <p>If you explicitly enable external integrations (such as Google Sign-In / OIDC or Last.fm scrobbling), only the minimum necessary authentication tokens or scrobble payloads are sent to those respective services in direct accordance with your configuration.</p>
+      <p>If you explicitly enable optional external integrations, data exchanges are strictly limited to what is required for the service you configured:</p>
+      <ul>
+        <li><strong>Google Sign-In / OIDC:</strong> When signing in with Google, Maux requests only basic profile information (your email address, display name, and profile picture URL) to authenticate your user account. Maux never requests sensitive scopes, does not access your Google Drive or external account contents, and never receives or stores your raw Google account password.</li>
+        <li><strong>Last.fm Scrobbling:</strong> When enabled, only the listening scrobble payload (track name, artist, album, and timestamp) is sent directly to Last.fm in accordance with your account link.</li>
+      </ul>
 
       <h2>5. Network Permissions &amp; Local Network Access</h2>
       <p>Maux client applications (iOS, macOS, Android, Windows, Linux) require local network access exclusively to discover and communicate directly with your self-hosted Maux Music Server instance via LAN or configured HTTPS endpoints.</p>
