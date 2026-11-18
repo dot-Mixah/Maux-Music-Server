@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maux Music Server</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <style>
     :root {
       --bg-base: #0f0a14;
@@ -57,18 +58,12 @@
       color: var(--text-main);
     }
 
-    .brand-badge {
-      width: 36px;
-      height: 36px;
+    .brand-logo {
+      width: 38px;
+      height: 38px;
       border-radius: 10px;
-      background: linear-gradient(135deg, var(--primary), var(--orange));
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      object-fit: cover;
       box-shadow: 0 4px 14px rgba(255, 0, 80, 0.35);
-      font-weight: 800;
-      color: #fff;
-      font-size: 1.1rem;
     }
 
     nav a {
@@ -94,6 +89,17 @@
     .hero {
       text-align: center;
       padding: 3rem 1rem;
+    }
+
+    .hero-logo {
+      width: 108px;
+      height: 108px;
+      border-radius: 26px;
+      object-fit: cover;
+      margin: 0 auto 1.75rem;
+      display: block;
+      box-shadow: 0 12px 36px rgba(255, 0, 80, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .hero h1 {
@@ -216,7 +222,7 @@
 <body>
   <header>
     <a href="index.html" class="brand">
-      <div class="brand-badge">M</div>
+      <img src="logo.png" alt="Maux Logo" class="brand-logo">
       <span>Maux</span>
     </a>
     <nav>
@@ -228,6 +234,7 @@
 
   <main>
     <section class="hero">
+      <img src="logo.png" alt="Maux Logo" class="hero-logo">
       <h1>Your Personal Music Server, <span class="gradient-text">Uncompromised.</span></h1>
       <p>Self-hosted, high-fidelity music streaming server powered by Node.js and SQLite. Total sovereignty over your audio catalog, synced across all your devices.</p>
       <div class="btn-group">
