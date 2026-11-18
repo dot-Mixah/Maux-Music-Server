@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Maux Music</title>
+  <style>
+    :root {
+      --bg-base: #0f0a14;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --primary: #FF0050;
+      --orange: #FF9500;
+      --text-main: #FFFFFF;
+      --text-secondary: rgba(255, 255, 255, 0.7);
+      --text-muted: rgba(255, 255, 255, 0.5);
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(255, 0, 80, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(71, 0, 96, 0.3) 0%, transparent 50%);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 2rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--primary), var(--orange));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(255, 0, 80, 0.35);
+      font-weight: 800;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin-left: 1.5rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--text-main);
+    }
+
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 1.5rem auto 4rem;
+      padding: 0 1.5rem;
+      width: 100%;
+    }
+
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #FFFFFF, rgba(255, 255, 255, 0.8));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .updated-date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: #FFFFFF;
+      border-bottom: 1px solid var(--glass-border);
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 1.25rem;
+    }
+
+    ul {
+      color: var(--text-secondary);
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      color: #FFFFFF;
+    }
+
+    footer {
+      border-top: 1px solid var(--glass-border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin: 0 0.75rem;
+    }
+
+    footer a:hover {
+      color: var(--text-main);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="brand">
+      <div class="brand-badge">M</div>
+      <span>Maux</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://github.com/dot-Mixah/Maux-Music-Server" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-card">
+      <h1>Privacy Policy</h1>
+      <span class="updated-date">Last Updated: November 2026</span>
+
+      <p>Maux ("Maux Music", "Maux Server", "we", "our") is designed from the ground up to respect your digital sovereignty and personal privacy. We believe your music collection, listening habits, and library data belong entirely to you.</p>
+
+      <h2>1. Overview &amp; Self-Hosted Architecture</h2>
+      <p>Maux Server and its companion client applications are self-hosted software. When you run Maux Server, all audio files, playback history, metadata, and user accounts are hosted and stored on your own hardware or infrastructure.</p>
+
+      <h2>2. Data We Do NOT Collect</h2>
+      <ul>
+        <li><strong>No Telemetry or Tracking:</strong> We do not track, collect, or upload your browsing, playback, or music streaming habits.</li>
+        <li><strong>No Third-Party Analytics:</strong> Maux does not bundle Google Analytics, Firebase Analytics, Facebook SDKs, or any advertising trackers.</li>
+        <li><strong>No Personal Identifiable Information (PII) Sale:</strong> We never sell, rent, or monetize any user data.</li>
+      </ul>
+
+      <h2>3. Information Stored Locally on Your Server</h2>
+      <p>The following data is maintained strictly within your self-hosted SQLite database or client local storage:</p>
+      <ul>
+        <li><strong>User Accounts &amp; Passwords:</strong> Credentials hashed using secure algorithms (e.g. Scrypt) and break-glass recovery tokens.</li>
+        <li><strong>Audio Library Metadata:</strong> Artist, album, track names, lyrics, cover art, and local file paths.</li>
+        <li><strong>Playback History &amp; Favorites:</strong> Your play counts, playlists, likes/dislikes, and queue states.</li>
+      </ul>
+
+      <h2>4. Third-Party Integrations (Optional)</h2>
+      <p>If you explicitly enable external integrations (such as Google Sign-In / OIDC or Last.fm scrobbling), only the minimum necessary authentication tokens or scrobble payloads are sent to those respective services in direct accordance with your configuration.</p>
+
+      <h2>5. Network Permissions &amp; Local Network Access</h2>
+      <p>Maux client applications (iOS, macOS, Android, Windows, Linux) require local network access exclusively to discover and communicate directly with your self-hosted Maux Music Server instance via LAN or configured HTTPS endpoints.</p>
+
+      <h2>6. Security</h2>
+      <p>Maux utilizes cryptographic identity verification (Ed25519 server keys, pinned certificates, and scoped stream ticket tokens) to secure communication between clients and your server without relying on centralized intermediaries.</p>
+
+      <h2>7. Contact</h2>
+      <p>If you have any questions or feedback regarding this Privacy Policy or Maux's privacy practices, please open an issue on our GitHub repository: <a href="https://github.com/dot-Mixah/Maux-Music-Server" style="color: var(--primary); text-decoration: none;" target="_blank" rel="noopener">dot-Mixah/Maux-Music-Server</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Maux Music. Open source software.</p>
+    <div style="margin-top: 0.5rem;">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://github.com/dot-Mixah/Maux-Music-Server" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
